@@ -1,0 +1,139 @@
+	/*黑色的背景*/
+	body {
+		background: #2f2f2f;
+	}
+	
+	#table1{
+		width: 100%;
+		height: 300px;
+		margin-top: 5%;
+		border-spacing: 16px;
+		margin-bottom: 1%;
+		color: green;
+		
+		/*圓弧*/
+		border-color: green;
+		border-collapse: separate;
+		border-style: hidden;
+		box-shadow: none;
+		
+		border-radius:999em;
+	}
+	
+	#th1{
+		width: 33%;
+		height: 33%;
+		cursor: pointer;
+		color:black;
+		-webkit-transition: -webkit-transform 0.1s;
+		transition: -webkit-transform 0.1s;
+		transition: transform 0.1s;
+		transition: transform 0.1s, -webkit-transform 0.1s;
+		
+		background: -webkit-linear-gradient(285deg, #00a8ff 0%, #cc00ff 100%);
+		background: linear-gradient(165deg, #00a8ff 0%, #cc00ff 100%);
+		border-radius:100%;
+		box-shadow: 0 0 90px rgba(0, 0, 255, 0.6);
+	}
+	#th3{
+		width: 33%;
+		height: 33%;
+		cursor: pointer;
+		-webkit-transition: -webkit-transform 0.1s;
+		transition: -webkit-transform 0.1s;
+		transition: transform 0.1s;
+		transition: transform 0.1s, -webkit-transform 0.1s;
+		
+		background: -webkit-linear-gradient(285deg, #00a8ff 0%, #cc00ff 100%);
+		background: linear-gradient(165deg, #00a8ff 0%, #cc00ff 100%);
+		border-radius:100%;
+		box-shadow: 0 0 90px rgba(0, 0, 255, 0.6);
+	}
+	
+	#b1{
+		height: 30px;
+		width: 8%;
+		border: 2px orange double;
+		background-color: #77FFEE;
+		margin-left: 15%;
+		margin-top: 1%;
+	 
+	}
+	#b2{
+		height: 30px;
+		width: 8%;
+		border: 2px orange double;
+		background-color: #77FFEE;
+		margin-left: 25%;
+		margin-top: 1%;
+		
+	}
+	#b3{
+	
+		height: 30px;
+		width: 8%;
+		border: 2px orange double;
+		background-color: #77FFEE;
+		margin-left: 25%;
+		margin-top: 1%;
+	}
+	
+	#icon2{
+		background-image:url(https://image.flaticon.com/icons/svg/152/152351.svg);
+		width:50px;
+		height:50px;
+		border:none;
+		background-color:#2f2f2f;
+	}
+	
+	#icon3{
+		background-image:url(https://image.flaticon.com/icons/svg/2/2087.svg);
+		width:50px;
+		height:50px;
+		border:none;
+		background-color:#2f2f2f;
+	}
+	
+	#icon4{
+		background-image:url(https://image.flaticon.com/icons/svg/152/152352.svg);
+		width:50px;
+		height:50px;
+		border:none;
+		background-color:#2f2f2f;
+	}
+	
+	#icon5{
+		background-image:url(https://image.flaticon.com/icons/svg/95/95137.svg);
+		width:50px;
+		height:50px;
+		border:none;
+		background-color:#2f2f2f;			
+	}
+	
+	#showbox{
+		color: green;
+		font-size: 45px;
+		
+	}
+	
+	.m1{
+		visibility:hidden;
+	}
+	
+	#CName{
+		visibility:hidden;
+	}
+	
+	.picture1{
+		background-image: url(https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.0-9/s851x315/82207036_2797571000264478_6770488941066846208_n.jpg?_nc_cat=102&_nc_ohc=kWBXJsV7GsMAX-gmCBa&_nc_ht=scontent.ftpe7-3.fna&_nc_tp=1&oh=8b225841f33461ae40acdbe96fd77c59&oe=5E98C76C);
+		width:80%;
+		height:80%;
+		margin-top:30px;
+		border-radius:100%;
+	}
+	
+	#map {
+		height:600px;
+		width:600px;
+		margin:0px auto;
+      }

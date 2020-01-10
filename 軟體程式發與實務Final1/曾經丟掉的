@@ -1,0 +1,85 @@
+<table id="table2" frame="void" rules="none">
+<tr>
+	<th>
+	<input type="button" value="油門"
+		onmousedown   ="add(180);"
+		ontouchstart  ="add(180);"
+
+		onmouseup     ="add(0);"
+		onmouseout    ="add(0);"
+		ontouchend    ="add(0);"
+		ontouchcancel ="add(0);"
+
+		ontouchmove   ="CancelEvent(event);"/>
+	</th>
+	<th>
+		<input type="button" onclick="ShowA()" value="A"/>
+		<input type="button" onclick="ShowB()" value="B"/>
+		<input type="button" onclick="ShowC()" value="C"/>
+		<input type="button" onclick="ShowD()" value="D"/>
+	</th>
+	</tr>
+</table>
+
+////*邊框虛無化*///
+ frame="void" rules="none"
+ 
+ 
+ /*原本的*/
+ <th id="th3"><font size="1">Gear Select<br>
+		<font size="7">A
+		</th>
+		
+/*th2*/
+<th id="th2">
+	<font size="1">Vehicle speed(km/h)<br>
+	<font size="7">
+	<div id="velocity1">0</div>
+					
+</th>	
+////////////////////////////////////////////////////////////////////
+
+
+<!-- 目錄 -->
+
+<input id="b1" type="button" value="Simple">
+<input id="b2" type="button" value="Racer">
+<input id="b3" type="button" value="Player">
+
+//畫虛線圓//
+ <div id="home">
+          <div id="radial">
+            <div id="empty"></div>
+          </div>
+        </div>
+//*//
+html, body {
+  background: #2f2f2f;
+}
+
+#radial {
+  position: absolute;
+  margin: 20px;
+  width: 340px;
+  height: 340px;
+  opacity: 0.5;
+}
+#radial #empty {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background-color: #000;
+  border-radius: 100%;
+  left: 5%;
+  top: 5%;
+  pointer-events: none;
+}
+#radial .tick {
+  position: absolute;
+  width: 1.5px;
+  height: 100%;
+  left: 50%;
+  margin-left: -1px;
+  background: #fff;
+  pointer-events: none;
+}

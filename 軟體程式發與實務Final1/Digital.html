@@ -1,0 +1,106 @@
+<html>
+<head>
+  <title>數位儀表板</title>
+  <!-- 儀表板 -->
+  <link href="botton.css" rel="stylesheet" media="all">
+  <link href="color.css" rel="stylesheet" media="all">
+  <script type="text/javascript" src="color.js"> </script>
+  <script type="text/javascript" src="time.js"> </script>
+  <script type="text/javascript" src="map.js"> </script>
+  <!-- 天氣 -->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/styles_tablet.css" rel="stylesheet">
+  <script type="text/javascript" src="js/lib/jquery-3.1.1-min.js"></script>
+  <script type="text/javascript" src="js/cityData.js"></script>
+  <script type="text/javascript" src="js/WeatherScript.js"></script>
+</head>
+
+<body onload="ShowTime()" onload="makeRadial()">
+
+<!-- 主要內容 -->
+<table id="table1">
+	
+	<tr>
+		<th colspan="7">
+		<div id="showbox">00:00:00</div>
+		</th>
+	</tr>
+	<tr>
+		<td id="th1" rolspan="3"  colspan="2" align='center' valign="middle">
+			<h1 id="velocity2">0</h1>
+			<div id="mph">rpm</div>		
+		</td>
+		<td rolspan="3" colspan="3" align='center' valign="middle">
+			<div id="main">
+				<div id="screen">
+					<div id="home">
+						<div id="radial">
+							<div id="empty"></div>
+						</div>
+						<h1 id="velocity1">0</h1>
+						<div id="mph">km/hr</div>
+					</div>
+				</div>
+			</div>
+		</td>
+		<td id="th3" rolspan="3" colspan="2" align='center' valign="middle">
+			<div id="change1" class="m1">
+				<div id="change2" class="m1"></div>
+				<div id="change3" class="m1"></div>
+			</div>
+			<!--縣市-->	
+			<div id="CName"></h3>
+		</td>
+	</tr>
+	<tr>
+		<td align='center' valign="middle" colspan="2">
+			<div style="position:relative;width:40px;height:30px;overflow:hidden;">
+				<div style="position:absolute;top:-277px;left:-15px">
+					<iframe width="300" height="310" 
+						src="https://www.youtube.com/embed/Bup2jmStJ0w?rel=0">
+					</iframe>
+				</div>
+			</div>
+		</td>
+		<td align='center' valign="middle">
+			<input type="button" id="icon2" onclick="left()" />	
+		</td>
+		<td align='center' valign="middle">
+			<input type="button" id="icon3" onclick="mode()" />
+		</td>
+		<td align='center' valign="middle">
+			<input type="button" id="icon4" onclick="right()" />
+		</td>
+		<td colspan="2" align='center' valign="middle">
+			<input type="button" id="icon5" onclick="light()" />
+		</td>
+		
+	</tr>
+</table>
+	
+
+<input type ="button" value ="油門" style="border-radius:50%"
+		onmousedown   ="velocityplus();"
+		ontouchstart  =""
+
+		onmouseup     ="stopandgo();"
+		onmouseout    ="stopandgo();"
+		ontouchend    =""
+		ontouchcancel =""
+
+		ontouchmove   ="CancelEvent(event);"
+	/>
+<input type ="button" value ="煞車" style="border-radius:50%"
+		onmousedown   ="velocitydown();"
+		ontouchstart  =""
+
+		onmouseup     ="goandstop();"
+		onmouseout    ="goandstop();"
+		ontouchend    =""
+		ontouchcancel =""
+
+		ontouchmove   ="CancelEvent(event);"
+	/>
+
+</body>
+</html>
